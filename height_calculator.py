@@ -13,8 +13,13 @@ def showheight():
 root = Tk()
 root.title("Height Calculator")
 root.geometry("500x400")
+<<<<<<< HEAD
 root.configure({"bg": "lightgrey"})
 lbl = Label(root, text="Enter your height", font=('bold', 15))
+=======
+root.configure({"bg": "white"})
+lbl = Label(root, text="Enter your height")
+>>>>>>> master
 lbl.pack(pady=15)
 height = ttk.Entry(root)
 height.pack(pady=15, ipadx=25, ipady=5)
