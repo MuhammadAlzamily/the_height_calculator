@@ -1,4 +1,5 @@
 from tkinter import *
+from tkinter import ttk
 from tkinter.messagebox import showinfo, showerror
 
 
@@ -11,11 +12,12 @@ def showheight():
 
 root = Tk()
 root.title("Height Calculator")
-root.geometry("300x150")
+root.geometry("500x400")
+root.configure({"bg": "white"})
 lbl = Label(root, text="Enter your height")
 lbl.pack(pady=15)
-height = Entry(root)
-height.pack(pady=15)
-btn = Button(root, text="Click me :)", command=showheight)
+height = ttk.Entry(root)
+height.pack(pady=15, ipadx=25, ipady=5)
+btn = ttk.Button(root, text="Click me :)", command=showheight)
 btn.pack(pady=15)
 root.mainloop()
