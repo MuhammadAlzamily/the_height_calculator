@@ -13,7 +13,7 @@ def showheight():
 root = Tk()
 root.title("Height Calculator")
 root.geometry("500x400")
-root.configure({"bg": "white"})
+root.configure({"bg": "aqua"})
 lbl = Label(root, text="Enter your height")
 lbl.pack(pady=15)
 height = ttk.Entry(root)
