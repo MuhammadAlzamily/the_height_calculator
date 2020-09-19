@@ -13,10 +13,15 @@ def showheight():
 root = Tk()
 root.title("Height Calculator")
 root.geometry("500x400")
-lbl = Label(root, text="Enter your height", font=("bold", 18))
+root.configure({'bg': 'lightgrey'})
+myframe = Frame(root, bd=0, bg='lightgrey')
+myframe.pack(padx=20, pady=80)
+lbl = Label(myframe, text="Enter your height",
+            bg='lightgrey', font=("halvetica", 18))
 lbl.pack(pady=15)
-height = ttk.Entry(root, width=30)
+height = ttk.Entry(myframe, width=30)
 height.pack(pady=15, ipadx=25, ipady=5)
-btn = ttk.Button(root, text="Calculate", command=showheight)
+btn = Button(myframe, text="Calculate", command=showheight,
+             relief='flat', bg='red', fg='white')
 btn.pack(pady=15)
 root.mainloop()
