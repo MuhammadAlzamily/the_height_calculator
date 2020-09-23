@@ -1,5 +1,4 @@
-from tkinter import *
-from tkinter import ttk
+from tkinter import ttk, Tk, Frame, Label, Button
 from tkinter.messagebox import showinfo, showerror
 
 
