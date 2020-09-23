@@ -1,13 +1,14 @@
-from tkinter import *
-from tkinter import ttk
+from tkinter import ttk, Tk, Frame, Label, Button
 from tkinter.messagebox import showinfo, showerror
 
 
 def showheight():
+    global height
     if height.get():
         showinfo(title="Results", message=f"Your height is {height.get()}")
     else:
         showerror(title="Empty Field", message="Text field can't be empty")
+    height.delete(0, 'end')
 
 
 root = Tk()
